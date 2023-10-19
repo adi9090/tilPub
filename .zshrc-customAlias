@@ -1,0 +1,50 @@
+# Aliases for git
+
+# git checkoug develop - fetch - rebase 
+alias gcdfrb="gcd && gf && grb"
+
+# git checkout master - fetch - rebase
+alias gcmfrb="gcm && gf && grb"
+
+# git add all - commit with amend - push force
+alias gcoampuf="gaa && gc --amend && gp -f"
+
+# git add all - commit with amend and no edit
+alias gcoamne="gaa && gc --amend --no-edit"
+
+# git commit - amend no edit - push force
+alias gcoamnepf="gcoamne && gp -f"
+
+# git add all - commit amend
+alias gcoam="gaa && gc --amend"
+
+# git add all - commit - push force
+alias gaacpf="gaa && gc && gp -f"
+
+# git rebase with origin/develop
+alias grbd="grb origin/develop"
+
+# git fetch - git rebase
+alias gfrb="gf && grb"
+
+# runs gradle formatKotlin and lintKotlin jobs
+alias klc="./gradlew formatKotlin && ./gradlew lintKotlin"
+
+# runs kotlin lint check with detekt
+alias klcd="klc && ./gradlew detekt"
+
+# runs gradle job detect
+alias detekt="./gradlew detekt"
+
+# runs flutter pub get
+alias flpg="flutter pub get"
+
+# git pushes the current branch to remote
+alias gpuocb='git push --set-upstream origin "$(git branch --show-current)"'
+
+# setup git config wit user.email and user.name
+alias gitsetup="git config user.email \"your@email.com\" && git config user.name \"user\""
+
+alias tsStartServer="npx tsc && node dist/index.js"
+
+alias flbrb="flutter packages pub run build_runner build"
