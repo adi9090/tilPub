@@ -45,6 +45,5 @@ alias gpuocb='git push --set-upstream origin "$(git branch --show-current)"'
 # setup git config wit user.email and user.name
 alias gitsetup="git config user.email \"your@email.com\" && git config user.name \"user\""
 
-alias tsStartServer="npx tsc && node dist/index.js"
-
+# run flutter build runner build
 alias flbrb="flutter packages pub run build_runner build"
