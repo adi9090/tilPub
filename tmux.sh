@@ -14,7 +14,7 @@
 
 # For MacOS users
 # If you get error reported for 'declare -A' command, you will need to use Homebrew to install latest version of bash: `brew install bash`
-# After installation of bash check if you have latest version with: `bash --version`, latest one is 5.2.15
+# After installation of bash check if you have latest version with: `/opt/homebrew/bin/bash --version`, latest one is 5.2.26
 # Use: `which bash` to get the location of the newly installed bash, for me that is '/opt/homebrew/bin/bash'
 # After you got the bash location, update first line to `#!{bash_location}, it should look something like: `#!/opt/homebrew/bin/bash`
 
