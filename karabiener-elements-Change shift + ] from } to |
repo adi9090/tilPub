@@ -1,0 +1,37 @@
+{
+    "description": "Change shift + ] from } to |",
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "keyboard_types": [
+                        "jis"
+                    ],
+                    "type": "keyboard_type_if"
+                }
+            ],
+            "from": {
+                "key_code": "backslash",
+                "modifiers": {
+                    "mandatory": [
+                        "shift"
+                    ],
+                    "optional": [
+                        "control",
+                        "option",
+                        "command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "international3",
+                    "modifiers": [
+                        "left_shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
