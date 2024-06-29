@@ -1,0 +1,34 @@
+{
+    "description": "Change ] to \\",
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "keyboard_types": [
+                        "jis"
+                    ],
+                    "type": "keyboard_type_if"
+                }
+            ],
+            "from": {
+                "key_code": "backslash",
+                "modifiers": {
+                    "optional": [
+                        "control",
+                        "option",
+                        "command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "international3",
+                    "modifiers": [
+                        "left_option"
+                    ]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
